@@ -1,6 +1,12 @@
 <h1>Universidad Tecnológica Metropolitana de El Salvador</h1>
 <h2>Proyecto 13b</h2>
 
+<div style="text-align: center; margin: 30px 0;">
+  <a href="/login" class="boton-acceso">
+    INGRESAR AL SISTEMA
+  </a>
+</div>
+
 <div class="imagen-container">
   <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tecnología">
 </div>
@@ -16,25 +22,18 @@
     padding: 50px 20px;
     margin: 0;
   }
-  
+   
   /* TÍTULO DE ARRIBA (UNIVERSIDAD) */
   h1 {
     color: #003366;
     background: white;
-    padding: 2rem 2rem 0.5rem 2rem; /* Menos espacio abajo */
-    
-    /* Bordes redondos SOLO arriba */
+    padding: 2rem 2rem 0.5rem 2rem;
     border-radius: 10px 10px 0 0;
-    
-    /* Sin línea abajo para que se una con el h2 */
     border-bottom: none;
-    
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     text-align: center;
     max-width: 800px;
     width: 100%;
-    
-    /* Clave: Margen 0 para pegar con el de abajo */
     margin-bottom: 0; 
   }
 
@@ -42,23 +41,38 @@
   h2 {
     color: #003366;
     background: white;
-    padding: 0rem 2rem 2rem 2rem; /* Sin espacio arriba */
-    
-    /* Bordes redondos SOLO abajo */
+    padding: 0rem 2rem 2rem 2rem;
     border-radius: 0 0 10px 10px;
-    
-    /* Línea amarilla decorativa al final */
     border-bottom: 5px solid #ffcc00;
-    
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
     max-width: 800px;
     width: 100%;
-    
-    /* Clave: Margen 0 para pegar con el de arriba */
     margin-top: 0; 
-    
-    font-weight: normal; /* Letra un poco más fina */
+    font-weight: normal;
+  }
+
+  /* ESTILOS DEL BOTÓN NUEVO */
+  .boton-acceso {
+    background-color: #003366; /* Azul UTEC */
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 2px solid #003366;
+  }
+
+  .boton-acceso:hover {
+    background-color: #ffcc00; /* Amarillo UTEC */
+    color: #003366;
+    border-color: #ffcc00;
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   /* CONTENEDOR DE LA IMAGEN */
@@ -66,7 +80,7 @@
     width: 100%;
     max-width: 800px;
     text-align: center;
-    margin-top: 30px; /* Separación entre el texto y la foto */
+    margin-top: 30px;
   }
 
   /* ESTILO DE LA FOTO */
